@@ -985,6 +985,21 @@ body[data-skin="arctic"] .category-tabs button.active{background:linear-gradient
 
 </style>
 
+
+<style id="gln-fixed-75-percent">
+html { background: #1a0a03; }
+body {
+  zoom: 0.75;
+}
+@supports not (zoom: 1) {
+  body {
+    transform: scale(0.75);
+    transform-origin: top left;
+    width: 133.333333%;
+  }
+}
+</style>
+
 </head>
 <body>
 <div class="app">
