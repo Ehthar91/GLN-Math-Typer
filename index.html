@@ -741,6 +741,185 @@ button:hover,.secondary:hover,.symbol:hover,.template:hover,.category-tabs butto
 }
 
 </style>
+
+<style id="gln-multi-skin-style">
+.skin-control{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border:2px solid #6b3815;
+  border-radius:10px;
+  background:#180a03;
+  color:#fff7df;
+  box-shadow:inset 0 2px 7px rgba(0,0,0,.5);
+}
+.skin-control label{
+  font-weight:800;
+  font-size:13px;
+}
+.skin-control select{
+  min-height:34px;
+  padding:5px 34px 5px 10px;
+  border:2px solid #7d431c;
+  border-radius:8px;
+  background:#2b160a;
+  color:#fff7df;
+  font-weight:800;
+}
+
+/* Default: Dark Wood */
+body[data-skin="dark-wood"]{
+  background:
+    repeating-linear-gradient(2deg,rgba(255,177,72,.025) 0 1px,rgba(0,0,0,.08) 2px 6px),
+    linear-gradient(90deg,#1a0a03,#3b1807 30%,#251005 65%,#3c1908)!important;
+}
+
+/* Light Wood */
+body[data-skin="light-wood"]{
+  background:
+    repeating-linear-gradient(2deg,rgba(117,62,16,.06) 0 1px,rgba(255,255,255,.05) 2px 6px),
+    linear-gradient(90deg,#9a5a24,#cf8b47 35%,#b66e31 65%,#d69a59)!important;
+}
+body[data-skin="light-wood"] header,
+body[data-skin="light-wood"] .card{
+  background:
+    repeating-linear-gradient(2deg,rgba(90,42,12,.07) 0 1px,rgba(255,255,255,.05) 2px 5px),
+    linear-gradient(90deg,#c37a34,#e4ad6b 50%,#be712d)!important;
+  border-color:#6f3b17!important;
+}
+body[data-skin="light-wood"] header h1,
+body[data-skin="light-wood"] header p,
+body[data-skin="light-wood"] .section-title,
+body[data-skin="light-wood"] .section-desc,
+body[data-skin="light-wood"] .group-title,
+body[data-skin="light-wood"] .help{
+  color:#3d1e0c!important;
+  text-shadow:none!important;
+}
+
+/* Midnight */
+body[data-skin="midnight"]{
+  background:linear-gradient(135deg,#050816,#101a35 55%,#05070f)!important;
+}
+body[data-skin="midnight"] header,
+body[data-skin="midnight"] .card{
+  background:linear-gradient(135deg,#0c1428,#182442)!important;
+  border-color:#30456d!important;
+  box-shadow:0 10px 28px rgba(0,0,0,.45)!important;
+}
+body[data-skin="midnight"] button,
+body[data-skin="midnight"] .secondary,
+body[data-skin="midnight"] .symbol,
+body[data-skin="midnight"] .template,
+body[data-skin="midnight"] .category-tabs button{
+  background:linear-gradient(#202d4c,#0d1527)!important;
+  color:#f4f7ff!important;
+  border-color:#3f5786!important;
+}
+body[data-skin="midnight"] .category-tabs button.active{
+  background:linear-gradient(#2e5c9f,#173d73)!important;
+  color:#fff!important;
+  border-color:#6da5ff!important;
+}
+body[data-skin="midnight"] .section-title,
+body[data-skin="midnight"] .section-desc,
+body[data-skin="midnight"] .group-title,
+body[data-skin="midnight"] .help{
+  color:#d9e6ff!important;
+}
+
+/* Classic Blue */
+body[data-skin="classic-blue"]{
+  background:linear-gradient(135deg,#edf6ff,#d9ebfb)!important;
+}
+body[data-skin="classic-blue"] header{
+  background:linear-gradient(120deg,#123a63,#24659d)!important;
+  color:#fff!important;
+  border-color:#0d2e50!important;
+}
+body[data-skin="classic-blue"] .card{
+  background:#fff!important;
+  border-color:#c9d9e8!important;
+}
+body[data-skin="classic-blue"] button,
+body[data-skin="classic-blue"] .secondary,
+body[data-skin="classic-blue"] .symbol,
+body[data-skin="classic-blue"] .template,
+body[data-skin="classic-blue"] .category-tabs button{
+  background:linear-gradient(#f7fbff,#dbeaf7)!important;
+  color:#123a63!important;
+  border-color:#b7cde1!important;
+  text-shadow:none!important;
+}
+body[data-skin="classic-blue"] .primary{
+  background:linear-gradient(#2c7fc3,#155d98)!important;
+  color:white!important;
+  border-color:#0f4d7f!important;
+}
+body[data-skin="classic-blue"] .clear{
+  background:linear-gradient(#e56a63,#b93e38)!important;
+  color:white!important;
+  border-color:#a4312c!important;
+}
+body[data-skin="classic-blue"] .category-tabs button.active{
+  background:linear-gradient(#1f6fb2,#144f82)!important;
+  color:white!important;
+  border-color:#0f4a79!important;
+}
+body[data-skin="classic-blue"] .section-title{
+  color:#123a63!important;
+  text-shadow:none!important;
+}
+body[data-skin="classic-blue"] .section-desc,
+body[data-skin="classic-blue"] .group-title,
+body[data-skin="classic-blue"] .help{
+  color:#5f7085!important;
+}
+
+/* High Contrast */
+body[data-skin="high-contrast"]{
+  background:#000!important;
+}
+body[data-skin="high-contrast"] header,
+body[data-skin="high-contrast"] .card{
+  background:#090909!important;
+  border-color:#f2c94c!important;
+}
+body[data-skin="high-contrast"] .editor{
+  background:#fff!important;
+  color:#000!important;
+  border-color:#f2c94c!important;
+}
+body[data-skin="high-contrast"] button,
+body[data-skin="high-contrast"] .secondary,
+body[data-skin="high-contrast"] .symbol,
+body[data-skin="high-contrast"] .template,
+body[data-skin="high-contrast"] .category-tabs button{
+  background:#111!important;
+  color:#fff!important;
+  border-color:#f2c94c!important;
+  text-shadow:none!important;
+}
+body[data-skin="high-contrast"] .category-tabs button.active{
+  background:#f2c94c!important;
+  color:#000!important;
+}
+body[data-skin="high-contrast"] .section-title,
+body[data-skin="high-contrast"] .section-desc,
+body[data-skin="high-contrast"] .group-title,
+body[data-skin="high-contrast"] .help{
+  color:#fff!important;
+}
+@media(max-width:700px){
+  .skin-control{
+    width:100%;
+    justify-content:center;
+    box-sizing:border-box;
+  }
+}
+</style>
+
 </head>
 <body>
 <div class="app">
@@ -758,6 +937,18 @@ button:hover,.secondary:hover,.symbol:hover,.template:hover,.category-tabs butto
     <button class="secondary" onclick="redoText()">↷ Redo</button>
     <button class="clear" onclick="clearText()">Clear</button>
     <span class="pill">Draft auto-saves</span>
+    <!-- GLN SKIN SELECTOR START -->
+    <div class="skin-control">
+      <label for="skinSelect">Skin</label>
+      <select id="skinSelect" aria-label="Choose calculator skin">
+        <option value="dark-wood">Dark Wood</option>
+        <option value="light-wood">Light Wood</option>
+        <option value="midnight">Midnight</option>
+        <option value="classic-blue">Classic Blue</option>
+        <option value="high-contrast">High Contrast</option>
+      </select>
+    </div>
+    <!-- GLN SKIN SELECTOR END -->
   </div>
 
   <div class="formatbar">
@@ -1064,6 +1255,22 @@ function undoText(){editor.focus();document.execCommand('undo')}
 function redoText(){editor.focus();document.execCommand('redo')}
 editor.addEventListener('input',()=>localStorage.setItem('glnMathDraft',editor.value));
 const saved=localStorage.getItem('glnMathDraft'); if(saved)editor.value=saved;
+
+// GLN SKIN SELECTOR START
+const skinSelect = document.getElementById('skinSelect');
+
+function applySkin(name){
+  const allowed = ['dark-wood','light-wood','midnight','classic-blue','high-contrast'];
+  const skin = allowed.includes(name) ? name : 'dark-wood';
+  document.body.setAttribute('data-skin', skin);
+  skinSelect.value = skin;
+  localStorage.setItem('glnMathTyperSkin', skin);
+}
+
+applySkin(localStorage.getItem('glnMathTyperSkin') || 'dark-wood');
+skinSelect.addEventListener('change', () => applySkin(skinSelect.value));
+// GLN SKIN SELECTOR END
+
 </script>
 </body>
 </html>
